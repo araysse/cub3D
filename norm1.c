@@ -6,7 +6,7 @@
 /*   By: araysse <araysse@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 17:58:35 by araysse           #+#    #+#             */
-/*   Updated: 2023/01/15 18:28:01 by araysse          ###   ########.fr       */
+/*   Updated: 2023/01/19 15:48:25 by araysse          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,32 @@ void	_path(char *v, int i)
 		ft_eror(1);
 }
 
+void	ft_position(char **s, t_let **let)
+{
+	int		i;
+	int		j;
+
+	i = 0;
+	j = 0;
+	while (s[i])
+	{
+		j = 0;
+		while (s[i][j])
+		{
+			if (s[i][j] == 'N' || s[i][j] == 'S'
+			|| s[i][j] == 'W' || s[i][j] == 'E')
+			{
+				(*let)->x = i;
+				(*let)->y = j;
+				(*let)->vue = s[i][j];
+				return ;
+			}
+			j++;
+		}
+		i++;
+	}
+}
+
 void	ft_check_path(char *v, t_let **let)
 {
 	int		i;
@@ -98,6 +124,7 @@ void	ft_check_path(char *v, t_let **let)
 	_path(v, i);
 	split = ft_split(v, '\n');
 	ft_check_space(split);
+	ft_position(split, let);
 	ft_last_check(v);
 	(*let)->map = malloc(sizeof (char *) * (ft_strlens(split)));
 	while (split[i])

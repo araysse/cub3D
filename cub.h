@@ -6,7 +6,7 @@
 /*   By: araysse <araysse@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:54:16 by araysse           #+#    #+#             */
-/*   Updated: 2023/01/15 14:57:35 by araysse          ###   ########.fr       */
+/*   Updated: 2023/01/19 15:30:10 by araysse          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,9 @@ typedef struct s_let
 	int		f_n;
 	int		c_n;
 	char	**map;
+	int		x;
+	int		y;
+	char	vue;
 }	t_let;
 
 char	*get_next_line(int fd);
