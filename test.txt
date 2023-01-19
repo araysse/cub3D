@@ -1,0 +1,39 @@
+NO KKKKKK   
+SO AAAAAA
+
+
+   11111
+    111N11
+	111111
+
+str = split();
+
+ini i = 0;
+while (str[i])
+{
+	str[i] = ft_strtrim(str[i], " ");
+	i++;
+}
+int arr[2];
+
+i = 0;
+while (i < 2)
+	arr[i++] = 0;
+
+i = 0;
+while (i < 6)
+{
+	if (ft_strnmcp(str[i], "NO ", 3) == 0)
+		arr[0] += 1;
+	if (ft_strnmcp(str[i], "SO ", 3) == 0)
+		arr[1] +=1;
+	else
+		error;
+}
+i = 0;
+while (arr[i])
+{
+	if (arr[i] == 0 || arr[i] > 1)
+		may have duplicated object or not completed object
+	i++;
+}
