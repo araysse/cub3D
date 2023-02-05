@@ -6,7 +6,7 @@
 /*   By: araysse <araysse@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 17:59:05 by araysse           #+#    #+#             */
-/*   Updated: 2023/01/14 14:37:39 by araysse          ###   ########.fr       */
+/*   Updated: 2023/01/27 14:07:07 by araysse          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,8 +73,10 @@ void	ft_check_map(char *s, t_let **let)
 	j = 0;
 	(void)let;
 	while (s[i++])
+	{
 		if (s[i] == '\t')
 			ft_eror(1);
+	}
 	split = ft_split(s, '\n');
 	ft_check_eror(split);
 	copy = malloc(sizeof(char *) * (ft_strlens(split) + 1));
