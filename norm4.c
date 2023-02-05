@@ -6,11 +6,11 @@
 /*   By: araysse <araysse@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 18:03:39 by araysse           #+#    #+#             */
-/*   Updated: 2023/01/27 14:06:27 by araysse          ###   ########.fr       */
+/*   Updated: 2023/02/05 13:06:40 by araysse          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub.h"
+#include "cub3d.h"
 
 void	_f_check(t_let **let)
 {
@@ -78,7 +78,7 @@ void	ft_c_check(t_let **let)
 	if ((*let)->c[0] == ',')
 		ft_eror(1);
 	while ((*let)->c[i] != '\0')
-	{
+	{	
 		if ((*let)->c[i] == ',')
 			j++;
 		i++;

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: araysse <araysse@student.42.fr>            +#+  +:+       +#+        */
+/*   By: yel-aoun <yel-aoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 16:04:33 by araysse           #+#    #+#             */
-/*   Updated: 2023/01/15 15:12:07 by araysse          ###   ########.fr       */
+/*   Updated: 2023/01/27 13:53:02 by yel-aoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub.h"
+#include "cub3d.h"
 
 char	*ft_strdup(char *src)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: araysse <araysse@student.42.fr>            +#+  +:+       +#+        */
+/*   By: yel-aoun <yel-aoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 14:30:15 by araysse           #+#    #+#             */
-/*   Updated: 2023/01/15 15:05:10 by araysse          ###   ########.fr       */
+/*   Updated: 2023/01/27 13:53:02 by yel-aoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub.h"
+#include "cub3d.h"
 
 char	*ft_strchr(char *s, int c)
 {

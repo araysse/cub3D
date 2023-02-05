@@ -6,11 +6,11 @@
 /*   By: araysse <araysse@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 17:58:35 by araysse           #+#    #+#             */
-/*   Updated: 2023/01/27 15:43:29 by araysse          ###   ########.fr       */
+/*   Updated: 2023/02/05 14:45:16 by araysse          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub.h"
+#include "cub3d.h"
 
 void	_last(char **split, int i, int j)
 {
@@ -18,7 +18,9 @@ void	_last(char **split, int i, int j)
 	{
 		if ((j + 1) > ft_strlen(split[i + 1])
 			|| (j + 1) > ft_strlen(split[i - 1]))
+		{
 			ft_eror(1);
+		}
 		else if (split[i - 1][j] == ' ' || split[i + 1][j] == ' '
 			|| split[i][j + 1] == ' ' || split[i][j - 1] == ' ')
 			ft_eror(1);

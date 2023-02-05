@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_parc.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yel-aoun <yel-aoun@student.42.fr>          +#+  +:+       +#+        */
+/*   By: araysse <araysse@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 11:15:09 by araysse           #+#    #+#             */
-/*   Updated: 2023/01/30 14:27:44 by yel-aoun         ###   ########.fr       */
+/*   Updated: 2023/02/05 18:54:45 by araysse          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ int	main(int ac, char **av)
 	s = av[1];
 	v = NULL;
 	fd = open(s, O_RDONLY);
+	if (fd == -1)
+		ft_eror(1);
 	str = get_next_line(fd);
 	while (str != NULL)
 	{
@@ -33,6 +35,8 @@ int	main(int ac, char **av)
 		free (str);
 		str = get_next_line(fd);
 	}
+	v = ft_strtrim(v, " \n", 0);
 	ft_check_map(v, &let);
 	ft_check_path(v, &let);
+	ft_cub_3d(let);
 }

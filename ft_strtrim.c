@@ -6,11 +6,11 @@
 /*   By: araysse <araysse@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/29 10:13:46 by araysse           #+#    #+#             */
-/*   Updated: 2023/01/12 12:46:26 by araysse          ###   ########.fr       */
+/*   Updated: 2023/02/05 14:47:39 by araysse          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub.h"
+#include "cub3d.h"
 
 int	ft_char_set(char c, const char *set)
 {
