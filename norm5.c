@@ -6,7 +6,7 @@
 /*   By: araysse <araysse@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 18:04:26 by araysse           #+#    #+#             */
-/*   Updated: 2023/02/05 18:54:31 by araysse          ###   ########.fr       */
+/*   Updated: 2023/02/09 10:12:04 by araysse          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,11 @@ void	ft_eror(int i)
 	if (i == 1)
 	{
 		printf("you have error in your map\n");
+		exit(0);
+	}
+	if (i == 2)
+	{
+		printf("error: check your extention!\n");
 		exit(0);
 	}
 }
